@@ -166,7 +166,7 @@ def main():
 
                 elif shell == "update":
 					print("updating...")
-                    os.system("python3 updater.py")
+					os.system("python3 updater.py")
 					print("update finished!")
 
                 elif "remove" in shell:
