@@ -164,10 +164,7 @@ def main():
                     else:
                         print("Operation canceled by user!\n")
 
-                elif shell == "update":
-					print("updating...")
-					os.system("python3 updater.py")
-					print("update finished!")
+                elif shell == "update": print("updating..."); os.system("python3 updater.py"); print("update finished!")
 
                 elif "remove" in shell:
                     print("Command not implemented yet!\n")
