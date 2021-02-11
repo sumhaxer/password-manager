@@ -85,7 +85,8 @@ def main():
     """
     f = open("key.pass", "r")
 
-    if f.read() == "":
+    if f.read() == ".
+":
         """
 
         if its the users first time using this program, it will ask them to create a master password,
