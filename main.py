@@ -105,7 +105,7 @@ def main():
         print("Version:", _version) # print version
         print("To continue you have to login!") # ask the user to login
         password = input("Password: ")
-        key = hashlib.sha512(password.encode("utf-8")).hexdigest() # generate key from password
+        key = hashlib.md5(password.encode("utf-8")).hexdigest() # generate key from password
         key = base64.urlsafe_b64encode(key.encode("utf-8"))
         os.system("clear")
         f = open("key.pass", "r")
