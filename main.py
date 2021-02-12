@@ -102,7 +102,8 @@ def main():
         os.system("clear")
         main()
 
-    else: print("Version:", _version) # print version
+    else:
+	print("Version:", _version) # print version
         print("To continue you have to login!")
         password = input("Password: ")
         key = hashlib.sha512(password.encode("utf-8")).hexdigest()
