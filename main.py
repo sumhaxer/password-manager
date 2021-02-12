@@ -104,7 +104,7 @@ def main():
     else:
         print("To continue you have to login!")
         password = input("Password: ")
-        key = hashlib.md5(password.encode("utf-8")).hexdigest()
+        key = hashlib.sha512(password.encode("utf-8")).hexdigest()
         key = base64.urlsafe_b64encode(key.encode("utf-8"))
         os.system("clear")
         f = open("key.pass", "r")
