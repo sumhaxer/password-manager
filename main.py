@@ -21,7 +21,7 @@ except ImportError:
 
 init() # initialize the colorama library
 
-_version = 1.0
+_version = 1.0 # version
 
 help_page =f"""
 
