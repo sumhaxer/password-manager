@@ -21,6 +21,7 @@ except ImportError:
 
 init() # initialize the colorama library
 
+_version = 1.0
 
 help_page =f"""
 
@@ -102,6 +103,7 @@ def main():
         main()
 
     else:
+	print("Version:", _version)
         print("To continue you have to login!")
         password = input("Password: ")
         key = hashlib.sha512(password.encode("utf-8")).hexdigest()
